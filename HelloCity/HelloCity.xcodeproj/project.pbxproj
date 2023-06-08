@@ -13,9 +13,11 @@
 		24DAC1DA2A322B4500AE763C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DAC1D82A322B4500AE763C /* Main.storyboard */; };
 		24DAC1DC2A322B4700AE763C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24DAC1DB2A322B4700AE763C /* Assets.xcassets */; };
 		24DAC1DF2A322B4700AE763C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DAC1DD2A322B4700AE763C /* LaunchScreen.storyboard */; };
+		3FA00CEB0F192CC7CDBFDB52 /* Pods_HelloCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C447E12F0604DE6FEFB63B /* Pods_HelloCity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00C447E12F0604DE6FEFB63B /* Pods_HelloCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DAC1CF2A322B4500AE763C /* HelloCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DAC1D22A322B4500AE763C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24DAC1D42A322B4500AE763C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		24DAC1DB2A322B4700AE763C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24DAC1DE2A322B4700AE763C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24DAC1E02A322B4700AE763C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36A5469EDE7268777C0E7C91 /* Pods-HelloCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCity.release.xcconfig"; path = "Target Support Files/Pods-HelloCity/Pods-HelloCity.release.xcconfig"; sourceTree = "<group>"; };
+		387A5EAEE3E4B25DA31AAE44 /* Pods-HelloCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCity.debug.xcconfig"; path = "Target Support Files/Pods-HelloCity/Pods-HelloCity.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA00CEB0F192CC7CDBFDB52 /* Pods_HelloCity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				24DAC1D12A322B4500AE763C /* HelloCity */,
 				24DAC1D02A322B4500AE763C /* Products */,
+				F930984A4832D68256289F17 /* Pods */,
+				CDED88692AD1D8DF8CDAF5E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = HelloCity;
 			sourceTree = "<group>";
 		};
+		CDED88692AD1D8DF8CDAF5E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00C447E12F0604DE6FEFB63B /* Pods_HelloCity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F930984A4832D68256289F17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				387A5EAEE3E4B25DA31AAE44 /* Pods-HelloCity.debug.xcconfig */,
+				36A5469EDE7268777C0E7C91 /* Pods-HelloCity.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24DAC1E32A322B4700AE763C /* Build configuration list for PBXNativeTarget "HelloCity" */;
 			buildPhases = (
+				C5A324C2235776F75E12F89E /* [CP] Check Pods Manifest.lock */,
 				24DAC1CB2A322B4500AE763C /* Sources */,
 				24DAC1CC2A322B4500AE763C /* Frameworks */,
 				24DAC1CD2A322B4500AE763C /* Resources */,
+				C873A5B72B78475843AF9998 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5A324C2235776F75E12F89E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloCity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C873A5B72B78475843AF9998 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloCity/Pods-HelloCity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloCity/Pods-HelloCity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloCity/Pods-HelloCity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		24DAC1CB2A322B4500AE763C /* Sources */ = {
@@ -216,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +351,7 @@
 		};
 		24DAC1E42A322B4700AE763C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 387A5EAEE3E4B25DA31AAE44 /* Pods-HelloCity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		24DAC1E52A322B4700AE763C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A5469EDE7268777C0E7C91 /* Pods-HelloCity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
