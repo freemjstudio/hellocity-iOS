@@ -19,6 +19,8 @@ class GetAPIData {
         let dataRequset = AF.request(url,
                                      method: .get,
                                      parameters: nil).validate(statusCode: 200..<300)
+        
+        var hotelList:[Hotel] = []
         dataRequset.responseJSON() { response in
             switch response.result {
             case .success(let value):
@@ -26,13 +28,14 @@ class GetAPIData {
                     print("Data count : \(jsonData.count)")
                     
                     // 여기서 부터 jsonData['title'] 이런식으로 데이터 얻어오기
-                    
+                    // hotelList.append()
                 }
             case .failure(let error):
                 print("error: \(String(describing: error.errorDescription))")
             }
         }
-       
+        
+
     }
     
 }
