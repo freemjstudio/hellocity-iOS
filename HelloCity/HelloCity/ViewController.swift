@@ -63,6 +63,13 @@ class ViewController: UIViewController {
         let recommendScrollView = UIScrollView()
         recommendScrollView.showsHorizontalScrollIndicator = false
         view.addSubview(recommendScrollView)
+=======
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
+       
+    }
+>>>>>>> 9e3207ca969022257c2e00dd2dd436b7e8ec0bac
 
         recommendScrollView.snp.makeConstraints { make in
             make.top.equalTo(recommendLabel.snp.bottom).offset(30)

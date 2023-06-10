@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24D92DC52A34A243003C0314 /* APIConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D92DC42A34A243003C0314 /* APIConstans.swift */; };
+		24D92DC72A34A2D8003C0314 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D92DC62A34A2D8003C0314 /* NetworkResult.swift */; };
+		24D92DC92A34A390003C0314 /* GetAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D92DC82A34A390003C0314 /* GetAPIData.swift */; };
 		24DAC1D32A322B4500AE763C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DAC1D22A322B4500AE763C /* AppDelegate.swift */; };
 		24DAC1D52A322B4500AE763C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DAC1D42A322B4500AE763C /* SceneDelegate.swift */; };
 		24DAC1D72A322B4500AE763C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DAC1D62A322B4500AE763C /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		00C447E12F0604DE6FEFB63B /* Pods_HelloCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D92DC42A34A243003C0314 /* APIConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstans.swift; sourceTree = "<group>"; };
+		24D92DC62A34A2D8003C0314 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		24D92DC82A34A390003C0314 /* GetAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAPIData.swift; sourceTree = "<group>"; };
 		24DAC1CF2A322B4500AE763C /* HelloCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DAC1D22A322B4500AE763C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24DAC1D42A322B4500AE763C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +48,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24D92DC32A34A233003C0314 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				24D92DC42A34A243003C0314 /* APIConstans.swift */,
+				24D92DC62A34A2D8003C0314 /* NetworkResult.swift */,
+				24D92DC82A34A390003C0314 /* GetAPIData.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		24D92DCA2A34A503003C0314 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		24DAC1C62A322B4500AE763C = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +86,8 @@
 		24DAC1D12A322B4500AE763C /* HelloCity */ = {
 			isa = PBXGroup;
 			children = (
+				24D92DCA2A34A503003C0314 /* Model */,
+				24D92DC32A34A233003C0314 /* Network */,
 				24DAC1D22A322B4500AE763C /* AppDelegate.swift */,
 				24DAC1D42A322B4500AE763C /* SceneDelegate.swift */,
 				24DAC1D62A322B4500AE763C /* ViewController.swift */,
@@ -207,8 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				24DAC1D72A322B4500AE763C /* ViewController.swift in Sources */,
+				24D92DC72A34A2D8003C0314 /* NetworkResult.swift in Sources */,
 				24DAC1D32A322B4500AE763C /* AppDelegate.swift in Sources */,
+				24D92DC92A34A390003C0314 /* GetAPIData.swift in Sources */,
 				24DAC1D52A322B4500AE763C /* SceneDelegate.swift in Sources */,
+				24D92DC52A34A243003C0314 /* APIConstans.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

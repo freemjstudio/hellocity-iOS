@@ -8,4 +8,5 @@ target 'HelloCity' do
   # Pods for HelloCity
   # Pods for SnapKit 
   pod 'SnapKit'
+  pod 'Alamofire', '~> 5.2'
 end
