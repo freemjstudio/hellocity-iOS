@@ -17,6 +17,9 @@
 		24DAC1DC2A322B4700AE763C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24DAC1DB2A322B4700AE763C /* Assets.xcassets */; };
 		24DAC1DF2A322B4700AE763C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DAC1DD2A322B4700AE763C /* LaunchScreen.storyboard */; };
 		3FA00CEB0F192CC7CDBFDB52 /* Pods_HelloCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C447E12F0604DE6FEFB63B /* Pods_HelloCity.framework */; };
+		A58311262A34D1DA00861020 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58311252A34D1DA00861020 /* HomeViewController.swift */; };
+		A58311282A34D26800861020 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58311272A34D26800861020 /* SearchViewController.swift */; };
+		A583112A2A34DB5700861020 /* BottomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58311292A34DB5700861020 /* BottomNavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		24DAC1E02A322B4700AE763C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36A5469EDE7268777C0E7C91 /* Pods-HelloCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCity.release.xcconfig"; path = "Target Support Files/Pods-HelloCity/Pods-HelloCity.release.xcconfig"; sourceTree = "<group>"; };
 		387A5EAEE3E4B25DA31AAE44 /* Pods-HelloCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCity.debug.xcconfig"; path = "Target Support Files/Pods-HelloCity/Pods-HelloCity.debug.xcconfig"; sourceTree = "<group>"; };
+		A58311252A34D1DA00861020 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A58311272A34D26800861020 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A58311292A34DB5700861020 /* BottomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 				24D92DC42A34A243003C0314 /* APIConstans.swift */,
 				24D92DC62A34A2D8003C0314 /* NetworkResult.swift */,
 				24D92DC82A34A390003C0314 /* GetAPIData.swift */,
+				A58311272A34D26800861020 /* SearchViewController.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -95,6 +102,8 @@
 				24DAC1DB2A322B4700AE763C /* Assets.xcassets */,
 				24DAC1DD2A322B4700AE763C /* LaunchScreen.storyboard */,
 				24DAC1E02A322B4700AE763C /* Info.plist */,
+				A58311252A34D1DA00861020 /* HomeViewController.swift */,
+				A58311292A34DB5700861020 /* BottomNavBar.swift */,
 			);
 			path = HelloCity;
 			sourceTree = "<group>";
@@ -233,9 +242,12 @@
 			files = (
 				24DAC1D72A322B4500AE763C /* ViewController.swift in Sources */,
 				24D92DC72A34A2D8003C0314 /* NetworkResult.swift in Sources */,
+				A583112A2A34DB5700861020 /* BottomNavBar.swift in Sources */,
+				A58311282A34D26800861020 /* SearchViewController.swift in Sources */,
 				24DAC1D32A322B4500AE763C /* AppDelegate.swift in Sources */,
 				24D92DC92A34A390003C0314 /* GetAPIData.swift in Sources */,
 				24DAC1D52A322B4500AE763C /* SceneDelegate.swift in Sources */,
+				A58311262A34D1DA00861020 /* HomeViewController.swift in Sources */,
 				24D92DC52A34A243003C0314 /* APIConstans.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
