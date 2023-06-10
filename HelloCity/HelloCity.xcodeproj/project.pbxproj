@@ -88,7 +88,6 @@
 				387A5EAEE3E4B25DA31AAE44 /* Pods-HelloCity.debug.xcconfig */,
 				36A5469EDE7268777C0E7C91 /* Pods-HelloCity.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -357,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L88FL78593;
+				DEVELOPMENT_TEAM = W8CRMFUW56;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloCity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -386,7 +385,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L88FL78593;
+				DEVELOPMENT_TEAM = W8CRMFUW56;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloCity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
