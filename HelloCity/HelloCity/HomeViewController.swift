@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     let cardData2 = ["서울", "부산", "강원"]
 
     let scrollView = UIScrollView()
+    let hotScrollView = UIScrollView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -322,8 +323,6 @@ class HomeViewController: UIViewController {
             make.left.equalToSuperview().offset(30)
         }
         
-        // Create a HorizontalScrollView
-        let hotScrollView = UIScrollView()
         hotScrollView.showsHorizontalScrollIndicator = false
         view.addSubview(hotScrollView)
 //        hotScrollView.backgroundColor = .black
@@ -398,6 +397,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height*2)
+        scrollView.contentSize = CGSize(width: view.frame.width, height: hotScrollView.frame.maxY)
     }
 }
