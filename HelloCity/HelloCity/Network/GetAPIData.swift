@@ -27,7 +27,6 @@ class GetAPIData {
                 if let jsonData = value as? [String:Any]{
                     print("Data count : \(jsonData.count)")
                     
-                    if let 
                     // 여기서 부터 jsonData['title'] 이런식으로 데이터 얻어오기
                     // hotelList.append()
                 }
