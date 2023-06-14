@@ -59,7 +59,7 @@ class HomeViewController: UIViewController {
         recommendAllBtn.setTitleColor(.black, for: .normal)
         recommendAllBtn.backgroundColor = scrollView.backgroundColor
         recommendAllBtn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-    //        recommendAllBtn.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        recommendAllBtn.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         view.addSubview(recommendAllBtn)
 
         recommendAllBtn.snp.makeConstraints { make in
@@ -67,7 +67,7 @@ class HomeViewController: UIViewController {
             make.bottom.equalTo(recommendLabel.snp.bottom)
             make.right.equalToSuperview().offset(-20)
         }
-//
+
         
         // Create a HorizontalScrollView
         let recommendScrollView = UIScrollView()
@@ -399,4 +399,10 @@ class HomeViewController: UIViewController {
         super.viewDidAppear(animated)
         scrollView.contentSize = CGSize(width: view.frame.width, height: hotScrollView.frame.maxY)
     }
+    
+    @objc func buttonTapped() {
+           // Instantiate and present the new view controller
+           let newViewController = RecommendAllViewController()
+            self.navigationController?.pushViewController(newViewController, animated: true)
+       }
 }

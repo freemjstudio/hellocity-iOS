@@ -22,6 +22,7 @@
 		A58311262A34D1DA00861020 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58311252A34D1DA00861020 /* HomeViewController.swift */; };
 		A58311282A34D26800861020 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58311272A34D26800861020 /* SearchViewController.swift */; };
 		A583112A2A34DB5700861020 /* BottomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58311292A34DB5700861020 /* BottomNavBar.swift */; };
+		A583112C2A35CE4500861020 /* RecommendAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583112B2A35CE4500861020 /* RecommendAllViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A58311252A34D1DA00861020 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A58311272A34D26800861020 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A58311292A34DB5700861020 /* BottomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavBar.swift; sourceTree = "<group>"; };
+		A583112B2A35CE4500861020 /* RecommendAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendAllViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				24D92DCA2A34A503003C0314 /* Model */,
 				24D92DC32A34A233003C0314 /* Network */,
 				24DAC1D22A322B4500AE763C /* AppDelegate.swift */,
+				A583112B2A35CE4500861020 /* RecommendAllViewController.swift */,
 				24DAC1D42A322B4500AE763C /* SceneDelegate.swift */,
 				24DAC1D62A322B4500AE763C /* ViewController.swift */,
 				24DAC1D82A322B4500AE763C /* Main.storyboard */,
@@ -252,6 +255,7 @@
 				A58311282A34D26800861020 /* SearchViewController.swift in Sources */,
 				24DAC1D32A322B4500AE763C /* AppDelegate.swift in Sources */,
 				24D92DC92A34A390003C0314 /* GetAPIData.swift in Sources */,
+				A583112C2A35CE4500861020 /* RecommendAllViewController.swift in Sources */,
 				24DAC1D52A322B4500AE763C /* SceneDelegate.swift in Sources */,
 				A58311262A34D1DA00861020 /* HomeViewController.swift in Sources */,
 				24D92DD02A34C7D8003C0314 /* Place.swift in Sources */,
