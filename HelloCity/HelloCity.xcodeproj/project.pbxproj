@@ -23,6 +23,7 @@
 		A58311282A34D26800861020 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58311272A34D26800861020 /* SearchViewController.swift */; };
 		A583112A2A34DB5700861020 /* BottomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58311292A34DB5700861020 /* BottomNavBar.swift */; };
 		A583112C2A35CE4500861020 /* RecommendAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583112B2A35CE4500861020 /* RecommendAllViewController.swift */; };
+		A583112E2A3B62EC00861020 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583112D2A3B62EC00861020 /* CategoryListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		A58311272A34D26800861020 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A58311292A34DB5700861020 /* BottomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavBar.swift; sourceTree = "<group>"; };
 		A583112B2A35CE4500861020 /* RecommendAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendAllViewController.swift; sourceTree = "<group>"; };
+		A583112D2A3B62EC00861020 /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				24DAC1E02A322B4700AE763C /* Info.plist */,
 				A58311252A34D1DA00861020 /* HomeViewController.swift */,
 				A58311292A34DB5700861020 /* BottomNavBar.swift */,
+				A583112D2A3B62EC00861020 /* CategoryListViewController.swift */,
 			);
 			path = HelloCity;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24DAC1D72A322B4500AE763C /* ViewController.swift in Sources */,
+				A583112E2A3B62EC00861020 /* CategoryListViewController.swift in Sources */,
 				24D92DC72A34A2D8003C0314 /* NetworkResult.swift in Sources */,
 				A583112A2A34DB5700861020 /* BottomNavBar.swift in Sources */,
 				A58311282A34D26800861020 /* SearchViewController.swift in Sources */,

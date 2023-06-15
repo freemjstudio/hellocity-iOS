@@ -205,7 +205,16 @@ class HomeViewController: UIViewController {
         categoryImageView1.clipsToBounds = true
         categoryImageView1.layer.cornerRadius = 20
         imageContainerView1.addSubview(categoryImageView1)
-
+    
+        categoryImageView1.isUserInteractionEnabled = true // Enable user interaction on the image view
+        // Add a tap gesture recognizer to the image view
+        let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:)))
+        
+        let parameters1: [String: Any] = ["param1": "음식점"]
+        objc_setAssociatedObject(tapGestureRecognizer1, UnsafeRawPointer(bitPattern: 1)!, parameters1, .OBJC_ASSOCIATION_RETAIN)
+        
+        categoryImageView1.addGestureRecognizer(tapGestureRecognizer1)
+        
         let categoryLabel1 = UILabel()
         categoryLabel1.text = "음식점"
         categoryLabel1.textAlignment = .center
@@ -237,6 +246,17 @@ class HomeViewController: UIViewController {
         categoryImageView2.layer.cornerRadius = 20
         imageContainerView2.addSubview(categoryImageView2)
 
+        
+        categoryImageView2.isUserInteractionEnabled = true // Enable user interaction on the image view
+        // Add a tap gesture recognizer to the image view
+        let tapGestureRecognizer2 = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:)))
+        
+        let parameters2: [String: Any] = ["param1": "문화"]
+        objc_setAssociatedObject(tapGestureRecognizer2, UnsafeRawPointer(bitPattern: 1)!, parameters2, .OBJC_ASSOCIATION_RETAIN)
+        
+        categoryImageView2.addGestureRecognizer(tapGestureRecognizer2)
+        
+
         let categoryLabel2 = UILabel()
         categoryLabel2.text = "문화"
         categoryLabel2.textAlignment = .center
@@ -266,6 +286,15 @@ class HomeViewController: UIViewController {
         categoryImageView3.clipsToBounds = true
         categoryImageView3.layer.cornerRadius = 20
         imageContainerView3.addSubview(categoryImageView3)
+        
+        categoryImageView3.isUserInteractionEnabled = true // Enable user interaction on the image view
+        // Add a tap gesture recognizer to the image view
+        let tapGestureRecognizer3 = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:)))
+        
+        let parameters3: [String: Any] = ["param1": "힐링"]
+        objc_setAssociatedObject(tapGestureRecognizer3, UnsafeRawPointer(bitPattern: 1)!, parameters3, .OBJC_ASSOCIATION_RETAIN)
+        
+        categoryImageView3.addGestureRecognizer(tapGestureRecognizer3)
 
         let categoryLabel3 = UILabel()
         categoryLabel3.text = "힐링"
@@ -297,6 +326,15 @@ class HomeViewController: UIViewController {
         categoryImageView4.clipsToBounds = true
         categoryImageView4.layer.cornerRadius = 20
         imageContainerView4.addSubview(categoryImageView4)
+        
+        categoryImageView4.isUserInteractionEnabled = true // Enable user interaction on the image view
+        // Add a tap gesture recognizer to the image view
+        let tapGestureRecognizer4 = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:)))
+        
+        let parameters4: [String: Any] = ["param1": "이색체험"]
+        objc_setAssociatedObject(tapGestureRecognizer4, UnsafeRawPointer(bitPattern: 1)!, parameters4, .OBJC_ASSOCIATION_RETAIN)
+        
+        categoryImageView4.addGestureRecognizer(tapGestureRecognizer4)
 
         let categoryLabel4 = UILabel()
         categoryLabel4.text = "이색체험"
@@ -405,4 +443,19 @@ class HomeViewController: UIViewController {
            let newViewController = RecommendAllViewController()
             self.navigationController?.pushViewController(newViewController, animated: true)
        }
+    
+    @objc func imageViewTapped(_ gestureRecognizer: UITapGestureRecognizer) {
+        if let parameters = objc_getAssociatedObject(gestureRecognizer, UnsafeRawPointer(bitPattern: 1)!) as? [String: Any] {
+            // Access the parameters and perform the desired action
+            if let param1 = parameters["param1"] as? String {
+                print("Parameter 1: \(param1)")
+                
+                // Perform your action here using the parameters
+                let nextViewController = CategoryListViewController()
+                nextViewController.categoryName = param1
+                
+                navigationController?.pushViewController(nextViewController, animated: true)
+            }
+        }
+    }
 }
