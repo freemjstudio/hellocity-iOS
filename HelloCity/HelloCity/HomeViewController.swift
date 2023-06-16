@@ -59,7 +59,7 @@ class HomeViewController: UIViewController {
         recommendAllBtn.setTitleColor(.black, for: .normal)
         recommendAllBtn.backgroundColor = scrollView.backgroundColor
         recommendAllBtn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-    //        recommendAllBtn.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        recommendAllBtn.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         view.addSubview(recommendAllBtn)
 
         recommendAllBtn.snp.makeConstraints { make in
@@ -67,7 +67,7 @@ class HomeViewController: UIViewController {
             make.bottom.equalTo(recommendLabel.snp.bottom)
             make.right.equalToSuperview().offset(-20)
         }
-//
+
         
         // Create a HorizontalScrollView
         let recommendScrollView = UIScrollView()
@@ -112,6 +112,11 @@ class HomeViewController: UIViewController {
             
             let imageView = UIImageView()
             imageView.image = UIImage(named: "sampleImage")
+            
+            if (cardText == "이맘때 더 이쁜 마포") {
+                imageView.image = UIImage(named: "mapo")
+            }
+            
             imageView.contentMode = .scaleAspectFill
             imageView.clipsToBounds = true // Ensure the image is clipped within the rounded corners
             imageView.layer.cornerRadius = 20
@@ -196,16 +201,25 @@ class HomeViewController: UIViewController {
             make.top.equalTo(categoryLabel.snp.bottom).offset(20)
             make.width.equalTo(view.snp.width).multipliedBy(0.4)
             make.height.equalTo(imageContainerView1.snp.width)
-            make.left.equalToSuperview().offset(20)
+            make.left.equalToSuperview().offset(40)
         }
 
         let categoryImageView1 = UIImageView()
-        categoryImageView1.image = UIImage(named: "sampleImage")
+        categoryImageView1.image = UIImage(named: "food")
         categoryImageView1.contentMode = .scaleAspectFill
         categoryImageView1.clipsToBounds = true
         categoryImageView1.layer.cornerRadius = 20
         imageContainerView1.addSubview(categoryImageView1)
-
+    
+        categoryImageView1.isUserInteractionEnabled = true // Enable user interaction on the image view
+        // Add a tap gesture recognizer to the image view
+        let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:)))
+        
+        let parameters1: [String: Any] = ["param1": "음식점"]
+        objc_setAssociatedObject(tapGestureRecognizer1, UnsafeRawPointer(bitPattern: 1)!, parameters1, .OBJC_ASSOCIATION_RETAIN)
+        
+        categoryImageView1.addGestureRecognizer(tapGestureRecognizer1)
+        
         let categoryLabel1 = UILabel()
         categoryLabel1.text = "음식점"
         categoryLabel1.textAlignment = .center
@@ -231,11 +245,22 @@ class HomeViewController: UIViewController {
         }
 
         let categoryImageView2 = UIImageView()
-        categoryImageView2.image = UIImage(named: "sampleImage")
+        categoryImageView2.image = UIImage(named: "culture")
         categoryImageView2.contentMode = .scaleAspectFill
         categoryImageView2.clipsToBounds = true
         categoryImageView2.layer.cornerRadius = 20
         imageContainerView2.addSubview(categoryImageView2)
+
+        
+        categoryImageView2.isUserInteractionEnabled = true // Enable user interaction on the image view
+        // Add a tap gesture recognizer to the image view
+        let tapGestureRecognizer2 = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:)))
+        
+        let parameters2: [String: Any] = ["param1": "문화"]
+        objc_setAssociatedObject(tapGestureRecognizer2, UnsafeRawPointer(bitPattern: 1)!, parameters2, .OBJC_ASSOCIATION_RETAIN)
+        
+        categoryImageView2.addGestureRecognizer(tapGestureRecognizer2)
+        
 
         let categoryLabel2 = UILabel()
         categoryLabel2.text = "문화"
@@ -254,18 +279,27 @@ class HomeViewController: UIViewController {
         scrollView.addSubview(imageContainerView3)
 
         imageContainerView3.snp.makeConstraints { make in
-            make.top.equalTo(imageContainerView1.snp.bottom).offset(5)
+            make.top.equalTo(imageContainerView1.snp.bottom).offset(20)
             make.width.equalTo(view.snp.width).multipliedBy(0.4)
             make.height.equalTo(imageContainerView3.snp.width)
-            make.left.equalToSuperview().offset(20)
+            make.left.equalToSuperview().offset(40)
         }
 
         let categoryImageView3 = UIImageView()
-        categoryImageView3.image = UIImage(named: "sampleImage")
+        categoryImageView3.image = UIImage(named: "healing")
         categoryImageView3.contentMode = .scaleAspectFill
         categoryImageView3.clipsToBounds = true
         categoryImageView3.layer.cornerRadius = 20
         imageContainerView3.addSubview(categoryImageView3)
+        
+        categoryImageView3.isUserInteractionEnabled = true // Enable user interaction on the image view
+        // Add a tap gesture recognizer to the image view
+        let tapGestureRecognizer3 = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:)))
+        
+        let parameters3: [String: Any] = ["param1": "힐링"]
+        objc_setAssociatedObject(tapGestureRecognizer3, UnsafeRawPointer(bitPattern: 1)!, parameters3, .OBJC_ASSOCIATION_RETAIN)
+        
+        categoryImageView3.addGestureRecognizer(tapGestureRecognizer3)
 
         let categoryLabel3 = UILabel()
         categoryLabel3.text = "힐링"
@@ -292,11 +326,20 @@ class HomeViewController: UIViewController {
         }
 
         let categoryImageView4 = UIImageView()
-        categoryImageView4.image = UIImage(named: "sampleImage")
+        categoryImageView4.image = UIImage(named: "activity")
         categoryImageView4.contentMode = .scaleAspectFill
         categoryImageView4.clipsToBounds = true
         categoryImageView4.layer.cornerRadius = 20
         imageContainerView4.addSubview(categoryImageView4)
+        
+        categoryImageView4.isUserInteractionEnabled = true // Enable user interaction on the image view
+        // Add a tap gesture recognizer to the image view
+        let tapGestureRecognizer4 = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped(_:)))
+        
+        let parameters4: [String: Any] = ["param1": "이색체험"]
+        objc_setAssociatedObject(tapGestureRecognizer4, UnsafeRawPointer(bitPattern: 1)!, parameters4, .OBJC_ASSOCIATION_RETAIN)
+        
+        categoryImageView4.addGestureRecognizer(tapGestureRecognizer4)
 
         let categoryLabel4 = UILabel()
         categoryLabel4.text = "이색체험"
@@ -361,7 +404,14 @@ class HomeViewController: UIViewController {
             }
 
             let categoryImageView = UIImageView()
-            categoryImageView.image = UIImage(named: "sampleImage")
+            categoryImageView.image = UIImage(named: "seoul")
+            if (cardText == "부산") {
+                categoryImageView.image = UIImage(named: "busan")
+            }
+            if (cardText == "강원") {
+                categoryImageView.image = UIImage(named: "gangwon")
+            }
+            
             categoryImageView.contentMode = .scaleAspectFill
             categoryImageView.clipsToBounds = true
             categoryImageView.layer.cornerRadius = 20
@@ -398,5 +448,26 @@ class HomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         scrollView.contentSize = CGSize(width: view.frame.width, height: hotScrollView.frame.maxY)
+    }
+    
+    @objc func buttonTapped() {
+           // Instantiate and present the new view controller
+           let newViewController = RecommendAllViewController()
+            self.navigationController?.pushViewController(newViewController, animated: true)
+       }
+    
+    @objc func imageViewTapped(_ gestureRecognizer: UITapGestureRecognizer) {
+        if let parameters = objc_getAssociatedObject(gestureRecognizer, UnsafeRawPointer(bitPattern: 1)!) as? [String: Any] {
+            // Access the parameters and perform the desired action
+            if let param1 = parameters["param1"] as? String {
+                print("Parameter 1: \(param1)")
+                
+                // Perform your action here using the parameters
+                let nextViewController = CategoryListViewController()
+                nextViewController.categoryName = param1
+                
+                navigationController?.pushViewController(nextViewController, animated: true)
+            }
+        }
     }
 }
