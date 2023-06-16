@@ -24,6 +24,7 @@
 		A583112A2A34DB5700861020 /* BottomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58311292A34DB5700861020 /* BottomNavBar.swift */; };
 		A583112C2A35CE4500861020 /* RecommendAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583112B2A35CE4500861020 /* RecommendAllViewController.swift */; };
 		A583112E2A3B62EC00861020 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583112D2A3B62EC00861020 /* CategoryListViewController.swift */; };
+		A58311302A3B907600861020 /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583112F2A3B907500861020 /* CategoryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		A58311292A34DB5700861020 /* BottomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavBar.swift; sourceTree = "<group>"; };
 		A583112B2A35CE4500861020 /* RecommendAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendAllViewController.swift; sourceTree = "<group>"; };
 		A583112D2A3B62EC00861020 /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		A583112F2A3B907500861020 /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				A58311252A34D1DA00861020 /* HomeViewController.swift */,
 				A58311292A34DB5700861020 /* BottomNavBar.swift */,
 				A583112D2A3B62EC00861020 /* CategoryListViewController.swift */,
+				A583112F2A3B907500861020 /* CategoryDetailViewController.swift */,
 			);
 			path = HelloCity;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				24D92DD02A34C7D8003C0314 /* Place.swift in Sources */,
 				24D92DC52A34A243003C0314 /* APIConstans.swift in Sources */,
 				24D92DCC2A34C6C1003C0314 /* Hotel.swift in Sources */,
+				A58311302A3B907600861020 /* CategoryDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

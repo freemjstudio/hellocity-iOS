@@ -70,9 +70,18 @@ class CategoryListViewController: UIViewController {
                 make.left.right.equalToSuperview().inset(16)
                 make.height.equalTo(250) // Adjust the height of the card as needed
             }
+            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+            cardView.addGestureRecognizer(tapGestureRecognizer)
 
             let imageView = UIImageView()
-            imageView.image = UIImage(named: "sampleImage")
+            imageView.image = UIImage(named: "food1")
+            if (cardText[0] == "평안도 족발집") {
+                imageView.image = UIImage(named: "food2")
+            }
+            if (cardText[0] == "미진") {
+                imageView.image = UIImage(named: "food3")
+            }
+            
             imageView.contentMode = .scaleAspectFill
             imageView.clipsToBounds = true // Ensure the image is clipped within the rounded corners
             imageView.layer.cornerRadius = 20
@@ -124,4 +133,9 @@ class CategoryListViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @objc func viewTapped() {
+        // Perform your desired action here, such as navigating to a new view controller
+        let nextViewController = CategoryDetailViewController()
+        navigationController?.pushViewController(nextViewController, animated: true)
+    }
 }

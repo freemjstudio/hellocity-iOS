@@ -10,7 +10,7 @@ import SnapKit
 
 class RecommendAllViewController: UIViewController {
     
-    let cardData = ["Card 1", "Card 2", "Card 3", "Card 4", "Card 5"]
+    let cardData = ["카페 마뫼", "헤리티지 클럽", "할아버지 공장"]
     
     let scrollView = UIScrollView()
 
@@ -84,7 +84,15 @@ class RecommendAllViewController: UIViewController {
             }
 
             let imageView = UIImageView()
-            imageView.image = UIImage(named: "sampleImage")
+            
+            imageView.image = UIImage(named: "recommend1")
+            if (cardText == "헤리티지 클럽") {
+                imageView.image = UIImage(named: "recommend2")
+            }
+            if (cardText == "할아버지 공장") {
+                imageView.image = UIImage(named: "recommend3")
+            }
+            
             imageView.contentMode = .scaleAspectFill
             imageView.clipsToBounds = true // Ensure the image is clipped within the rounded corners
             imageView.layer.cornerRadius = 20
@@ -145,8 +153,10 @@ class RecommendAllViewController: UIViewController {
             make.bottom.equalTo(previousCard?.snp.bottom ?? contentView.snp.bottom).offset(16)
         }
     }
+    
     @objc func backButtonTapped() {
         // Handle back button tap event
         navigationController?.popViewController(animated: true)
     }
+    
 }

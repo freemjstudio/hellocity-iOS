@@ -112,6 +112,11 @@ class HomeViewController: UIViewController {
             
             let imageView = UIImageView()
             imageView.image = UIImage(named: "sampleImage")
+            
+            if (cardText == "이맘때 더 이쁜 마포") {
+                imageView.image = UIImage(named: "mapo")
+            }
+            
             imageView.contentMode = .scaleAspectFill
             imageView.clipsToBounds = true // Ensure the image is clipped within the rounded corners
             imageView.layer.cornerRadius = 20
@@ -196,11 +201,11 @@ class HomeViewController: UIViewController {
             make.top.equalTo(categoryLabel.snp.bottom).offset(20)
             make.width.equalTo(view.snp.width).multipliedBy(0.4)
             make.height.equalTo(imageContainerView1.snp.width)
-            make.left.equalToSuperview().offset(20)
+            make.left.equalToSuperview().offset(40)
         }
 
         let categoryImageView1 = UIImageView()
-        categoryImageView1.image = UIImage(named: "sampleImage")
+        categoryImageView1.image = UIImage(named: "food")
         categoryImageView1.contentMode = .scaleAspectFill
         categoryImageView1.clipsToBounds = true
         categoryImageView1.layer.cornerRadius = 20
@@ -240,7 +245,7 @@ class HomeViewController: UIViewController {
         }
 
         let categoryImageView2 = UIImageView()
-        categoryImageView2.image = UIImage(named: "sampleImage")
+        categoryImageView2.image = UIImage(named: "culture")
         categoryImageView2.contentMode = .scaleAspectFill
         categoryImageView2.clipsToBounds = true
         categoryImageView2.layer.cornerRadius = 20
@@ -274,14 +279,14 @@ class HomeViewController: UIViewController {
         scrollView.addSubview(imageContainerView3)
 
         imageContainerView3.snp.makeConstraints { make in
-            make.top.equalTo(imageContainerView1.snp.bottom).offset(5)
+            make.top.equalTo(imageContainerView1.snp.bottom).offset(20)
             make.width.equalTo(view.snp.width).multipliedBy(0.4)
             make.height.equalTo(imageContainerView3.snp.width)
-            make.left.equalToSuperview().offset(20)
+            make.left.equalToSuperview().offset(40)
         }
 
         let categoryImageView3 = UIImageView()
-        categoryImageView3.image = UIImage(named: "sampleImage")
+        categoryImageView3.image = UIImage(named: "healing")
         categoryImageView3.contentMode = .scaleAspectFill
         categoryImageView3.clipsToBounds = true
         categoryImageView3.layer.cornerRadius = 20
@@ -321,7 +326,7 @@ class HomeViewController: UIViewController {
         }
 
         let categoryImageView4 = UIImageView()
-        categoryImageView4.image = UIImage(named: "sampleImage")
+        categoryImageView4.image = UIImage(named: "activity")
         categoryImageView4.contentMode = .scaleAspectFill
         categoryImageView4.clipsToBounds = true
         categoryImageView4.layer.cornerRadius = 20
@@ -399,7 +404,14 @@ class HomeViewController: UIViewController {
             }
 
             let categoryImageView = UIImageView()
-            categoryImageView.image = UIImage(named: "sampleImage")
+            categoryImageView.image = UIImage(named: "seoul")
+            if (cardText == "부산") {
+                categoryImageView.image = UIImage(named: "busan")
+            }
+            if (cardText == "강원") {
+                categoryImageView.image = UIImage(named: "gangwon")
+            }
+            
             categoryImageView.contentMode = .scaleAspectFill
             categoryImageView.clipsToBounds = true
             categoryImageView.layer.cornerRadius = 20
