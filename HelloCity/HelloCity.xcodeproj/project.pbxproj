@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		248D59A22A3BE1DB0014BC15 /* TMapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248D59A12A3BE1DA0014BC15 /* TMapSDK.framework */; };
+		248D59A32A3BE1DB0014BC15 /* TMapSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 248D59A12A3BE1DA0014BC15 /* TMapSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		248D59AB2A3BE2810014BC15 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248D59A72A3BE2810014BC15 /* SearchViewController.swift */; };
+		248D59AC2A3BE2810014BC15 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248D59A82A3BE2810014BC15 /* ResultViewController.swift */; };
+		248D59AD2A3BE2810014BC15 /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248D59A92A3BE2810014BC15 /* AddressCell.swift */; };
+		248D59AE2A3BE2810014BC15 /* RecentSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248D59AA2A3BE2810014BC15 /* RecentSearchViewController.swift */; };
 		24D92DC52A34A243003C0314 /* APIConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D92DC42A34A243003C0314 /* APIConstans.swift */; };
 		24D92DC72A34A2D8003C0314 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D92DC62A34A2D8003C0314 /* NetworkResult.swift */; };
 		24D92DC92A34A390003C0314 /* GetAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D92DC82A34A390003C0314 /* GetAPIData.swift */; };
@@ -24,8 +30,27 @@
 		A583112A2A34DB5700861020 /* BottomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58311292A34DB5700861020 /* BottomNavBar.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		248D59A42A3BE1DB0014BC15 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				248D59A32A3BE1DB0014BC15 /* TMapSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		00C447E12F0604DE6FEFB63B /* Pods_HelloCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		248D59A12A3BE1DA0014BC15 /* TMapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TMapSDK.framework; path = ../../Downloads/TMapSDK.framework; sourceTree = "<group>"; };
+		248D59A72A3BE2810014BC15 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		248D59A82A3BE2810014BC15 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		248D59A92A3BE2810014BC15 /* AddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
+		248D59AA2A3BE2810014BC15 /* RecentSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentSearchViewController.swift; sourceTree = "<group>"; };
 		24D92DC42A34A243003C0314 /* APIConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstans.swift; sourceTree = "<group>"; };
 		24D92DC62A34A2D8003C0314 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		24D92DC82A34A390003C0314 /* GetAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAPIData.swift; sourceTree = "<group>"; };
@@ -52,12 +77,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA00CEB0F192CC7CDBFDB52 /* Pods_HelloCity.framework in Frameworks */,
+				248D59A22A3BE1DB0014BC15 /* TMapSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		248D59A62A3BE2810014BC15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				248D59A72A3BE2810014BC15 /* SearchViewController.swift */,
+				248D59A82A3BE2810014BC15 /* ResultViewController.swift */,
+				248D59A92A3BE2810014BC15 /* AddressCell.swift */,
+				248D59AA2A3BE2810014BC15 /* RecentSearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		24D92DC32A34A233003C0314 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +136,7 @@
 		24DAC1D12A322B4500AE763C /* HelloCity */ = {
 			isa = PBXGroup;
 			children = (
+				248D59A62A3BE2810014BC15 /* View */,
 				24D92DCA2A34A503003C0314 /* Model */,
 				24D92DC32A34A233003C0314 /* Network */,
 				24DAC1D22A322B4500AE763C /* AppDelegate.swift */,
@@ -117,6 +155,7 @@
 		CDED88692AD1D8DF8CDAF5E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				248D59A12A3BE1DA0014BC15 /* TMapSDK.framework */,
 				00C447E12F0604DE6FEFB63B /* Pods_HelloCity.framework */,
 			);
 			name = Frameworks;
@@ -143,6 +182,7 @@
 				24DAC1CC2A322B4500AE763C /* Frameworks */,
 				24DAC1CD2A322B4500AE763C /* Resources */,
 				C873A5B72B78475843AF9998 /* [CP] Embed Pods Frameworks */,
+				248D59A42A3BE1DB0014BC15 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,12 +286,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				248D59AC2A3BE2810014BC15 /* ResultViewController.swift in Sources */,
 				24DAC1D72A322B4500AE763C /* ViewController.swift in Sources */,
 				24D92DC72A34A2D8003C0314 /* NetworkResult.swift in Sources */,
 				A583112A2A34DB5700861020 /* BottomNavBar.swift in Sources */,
 				A58311282A34D26800861020 /* SearchViewController.swift in Sources */,
 				24DAC1D32A322B4500AE763C /* AppDelegate.swift in Sources */,
 				24D92DC92A34A390003C0314 /* GetAPIData.swift in Sources */,
+				248D59AE2A3BE2810014BC15 /* RecentSearchViewController.swift in Sources */,
+				248D59AB2A3BE2810014BC15 /* SearchViewController.swift in Sources */,
+				248D59AD2A3BE2810014BC15 /* AddressCell.swift in Sources */,
 				24DAC1D52A322B4500AE763C /* SceneDelegate.swift in Sources */,
 				A58311262A34D1DA00861020 /* HomeViewController.swift in Sources */,
 				24D92DD02A34C7D8003C0314 /* Place.swift in Sources */,
